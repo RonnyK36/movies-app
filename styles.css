@@ -1,1 +1,43 @@
+* {
+    box-sizing: border-box;
+    font-family: Tahoma, sans-serif;
+}
 
+body {
+    margin: 0;
+    background-color: #22264b;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movie {
+    width: 300px;
+    background-color: #373b69;
+    border-radius: 5px;
+    margin: 1rem;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);
+}
+
+.movie img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.movie-info {
+    color: white;
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    letter-spacing: 1px;
+    justify-content: space-between;
+}
+
+.movie-info h3 {
+    margin: 0;
+}
+
+.movie-info span {
+    background: #22264b;
+    padding: 0.25rem 0.5rem;
+    border-radius: 5px;
+}

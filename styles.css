@@ -6,6 +6,9 @@
 body {
     margin: 0;
     background-color: #22264b;
+}
+
+main {
     display: flex;
     flex-wrap: wrap;
 }
@@ -40,4 +43,17 @@ body {
     background: #22264b;
     padding: 0.25rem 0.5rem;
     border-radius: 5px;
+    font-weight: bold;
+}
+
+.movie-info span.green {
+    color: rgb(13, 238, 13);
+}
+
+.movie-info span.orange {
+    color: orange;
+}
+
+.movie-info span.red {
+    color: rgb(231, 49, 49);
 }

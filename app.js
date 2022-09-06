@@ -25,7 +25,7 @@ function showMovies(movies) {
 
 
     movies.forEach(movie => {
-        const { poster_path, title, vote_average } = movie
+        const { poster_path, title, vote_average, overview } = movie
         const movieEl = document.createElement('div')
         movieEl.classList.add('movie')
         movieEl.innerHTML = `
@@ -34,6 +34,9 @@ function showMovies(movies) {
                 <h3 class="movie-title">${title}</h3>
                 <span class="${getClassColor(vote_average)}">${vote_average}</span>
             </div>
+            <div class="overview">
+            <h3>Overview: </h3>
+            ${overview}</div>
         `
 
         mainEL.appendChild(movieEl)
